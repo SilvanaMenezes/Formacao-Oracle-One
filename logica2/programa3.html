@@ -1,0 +1,44 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+  var tela = document.querySelector('canvas')
+  var pincel = tela.getContext('2d')
+  pincel.fillStyle = 'lightgrey'
+  pincel.fillRect(0, 0, 600, 400)
+
+  //NESTA FUNÇÃO UTILIZAMOS PROPRIEDADES COMO PAGEX, OFFSETTOP E ONCLICK PARA SABERMOS A POSIÇÃO DO CLIQUE DO USUÁRIO E COM O RAIO E A NOVACOR AUMENTAMOS O TAMANHO DA BOLINHA E MUDAMOS SUA COR.
+
+  var cores = ['blue', 'red', 'green']
+  var novaCor = 0
+  var raio = 10
+
+  function desenhaCirculo(evento) {
+    var x = evento.pageX - tela.offsetLeft
+    var y = evento.pageY - tela.offsetTop
+
+    pincel.fillStyle = cores[novaCor]
+    pincel.beginPath()
+    pincel.arc(x, y, raio, 0, 2 * 3.14)
+    pincel.fill()
+    console.log(x + ',' + y)
+
+    if (evento.shiftKey) {
+      raio = raio + 10
+    } else {
+      raio = 10
+    }
+  }
+  tela.onclick = desenhaCirculo
+
+  //ESSA FUNÇÃO PERMITE QUE O USUÁRIO CLIQUE COM O DIREITO PARA MUDAR A COR DA BOLINHA QUE APARECE QUANDO CLICA O ESQUERDO
+  function mudaCor() {
+    novaCor++
+
+    if (novaCor >= cores.length) {
+      novaCor = 0
+    }
+
+    return false // para não exibir o menu padrão do canvas
+  }
+  tela.oncontextmenu = mudaCor
+</script>

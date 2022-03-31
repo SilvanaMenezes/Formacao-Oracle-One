@@ -1,0 +1,32 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+  var tela = document.querySelector('canvas')
+  var pincel = tela.getContext('2d')
+
+  //área de trabalho
+  pincel.fillStyle = 'lightgrey'
+  pincel.fillRect(0, 0, 600, 400)
+
+  //quadrado
+  pincel.fillStyle = 'blue'
+  pincel.fillRect(0, 0, 100, 100)
+
+  //retangulo
+  pincel.fillStyle = 'yellow'
+  pincel.fillRect(105, 100, 210, 90)
+
+  //triangulo
+  pincel.fillStyle = 'red'
+  pincel.beginPath()
+  pincel.moveTo(330, 180)
+  pincel.lineTo(230, 300)
+  pincel.lineTo(430, 300)
+  pincel.fill()
+
+  //circulo
+  pincel.fillStyle = 'green'
+  pincel.beginPath()
+  pincel.arc(500, 320, 70, 0, 2 * 3.14)
+  pincel.fill()
+</script>

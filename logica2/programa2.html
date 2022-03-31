@@ -1,0 +1,59 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+  /* ESSA É UMA FORMA DE CRIAR O QUADRADO E A BORDA
+
+    pincel.fillRect(50, 0, 50, 50)
+    pincel.strokeRect(50, 0, 50, 50)
+    pincel.fillRect(100, 0, 50, 50)
+    pincel.strokeRect(100, 0, 50, 50)
+  */
+
+  /* AQUI ESTÁ UMA FUNÇÃO PARA DESENHAR OS QUADRADOS E AS BORDAS
+
+  function desenhaQuadradoVerde(x, y) {
+
+    var tela = document.querySelector('canvas')
+    var pincel = tela.getContext('2d')
+
+    pincel.fillStyle = 'green'
+    pincel.fillRect(x, y, 50, 50)
+    pincel.fillStroke = 'black'
+    //pincel.strokeStyle = 'red' alterando a cor da borda
+    pincel.strokeRect(x, y, 50, 50)
+  }
+  */
+
+  /* AQUI ESTOU MUDANDO A COR DE UM QUADRADO COM UMA NOVA FUNÇÃO
+
+  function desenhaQuadradoVermelho(x, y) {
+
+    var tela = document.querySelector('canvas')
+    var pincel = tela.getContext('2d')
+
+    pincel.fillStyle = 'red'
+    pincel.fillRect(x, y, 50, 50)
+    pincel.fillStroke = 'black'
+    pincel.strokeRect(x, y, 50, 50)
+  }
+
+  desenhaQuadradoVerde(0, 0)
+  desenhaQuadradoVermelho(0, 50)
+  desenhaQuadradoVerde(0, 100)
+  */
+
+  // ESSA É UMA FUNÇÃO PARA CRIAR VÁRIOS QUADRADOS,DECLARANDO-A VÁRIAS VEZES.
+
+  function desenhaQuadrado(x, y, cor) {
+    var tela = document.querySelector('canvas')
+    var pincel = tela.getContext('2d')
+
+    pincel.fillStyle = cor
+    pincel.fillRect(x, y, 50, 50)
+    pincel.fillStroke = 'black'
+    pincel.strokeRect(x, y, 50, 50)
+  }
+  desenhaQuadrado(0, 0, 'green')
+  desenhaQuadrado(50, 0, 'green')
+  desenhaQuadrado(100, 0, 'green')
+</script>

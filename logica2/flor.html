@@ -1,0 +1,32 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+  // AREA DE TRABALHO
+  var tela = document.querySelector('canvas')
+  var pincel = tela.getContext('2d')
+  pincel.fillStyle = 'lightgray'
+  pincel.fillRect(0, 0, 600, 400)
+
+  //NESTA FUNÇÃO PASSA-SE O RAIO DO CIRCULO COMO PARÂMETRO, MAS NO BLOCO DE CÓDIGO PASSA-SE TAMBÉM A FORMA DO CÍRCULO AQUI REPRESENTADO POR 2*MATH.PI (CIRCULO FECHADO)
+
+  function desenhaCirculo(x, y, raio, cor) {
+    pincel.fillStyle = cor
+    pincel.beginPath()
+    pincel.arc(x, y, raio, 0, 2 * Math.PI)
+    pincel.fill()
+  }
+
+  //AQUI FOI CRIADA A FUNÇÃO DESENHAFLOR PARA CHAMAR A DESENHACIRCULO E AI PODER CONSTRUIR A FLOR, NOS PARÂMETROS FORAM PASSADOS AS COORDENADAS DE CIRCULO QUE CORRESPONDE A PÉTALA DA FLOR E NO BLOCO DE NOTAS O 20 REPRESENTA OS PIXELS EM RELAÇÃO AO CÍRCULO DO MEIO.
+
+  function desenhaFlor(x, y) {
+    desenhaCirculo(x, y + 20, 10, 'yellow')
+    desenhaCirculo(x, y, 10, 'red')
+    desenhaCirculo(x, y - 20, 10, 'yellow')
+    desenhaCirculo(x - 20, y, 10, 'yellow')
+    desenhaCirculo(x + 20, y, 10, 'yellow')
+  }
+  desenhaFlor(50, 50)
+  desenhaFlor(100, 100)
+  desenhaFlor(150, 150)
+  desenhaFlor(200, 200)
+</script>

@@ -1,0 +1,46 @@
+<!-- esquadro.html -->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+  //ÁREA DE TRABALHO
+  var tela = document.querySelector('canvas')
+  var pincel = tela.getContext('2d')
+  pincel.fillStyle = '#CDC673'
+  pincel.fillRect(0, 0, 600, 400)
+
+  /* ESSA É UMA FORMA DE DESENHAR UM ESQUADRO
+  pincel.fillStyle = 'black'
+  pincel.beginPath()
+  pincel.moveTo(50, 50)
+  pincel.lineTo(50, 400)
+  pincel.lineTo(400, 400)
+  pincel.fill()
+
+  pincel.fillStyle = 'white'
+  pincel.beginPath()
+  pincel.moveTo(100, 175)
+  pincel.lineTo(100, 350)
+  pincel.lineTo(275, 350)
+  pincel.fill()
+  */
+
+  //AQUI TEMOS UMA FUNÇÃO PARA FAZER O MESMO DESENHO
+  function desenhaEsquadro(xa, ya, xc, yc, cor) {
+    pincel.fillStyle = cor
+    pincel.beginPath()
+    pincel.moveTo(xa, ya)
+    pincel.lineTo(xa, yc)
+    pincel.lineTo(xc, yc)
+    pincel.fill()
+
+    pincel.fillStyle = 'white'
+    pincel.beginPath()
+    pincel.moveTo(xa + 30, ya + 90)
+    pincel.lineTo(xa + 30, yc - 30)
+    pincel.lineTo(xc - 90, yc - 30)
+    pincel.fill()
+  }
+
+  desenhaEsquadro(50, 50, 300, 300, 'black')
+</script>

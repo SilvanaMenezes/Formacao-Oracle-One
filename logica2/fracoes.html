@@ -1,0 +1,30 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+  //DEFININDO ÁREA DE TRABALHO
+  var tela = document.querySelector('canvas')
+  var pincel = tela.getContext('2d')
+  pincel.fillStyle = 'lightgrey'
+  pincel.fillRect(0, 0, 600, 400)
+
+  //ESSA FUNÇÃO RECEBE O PARÂMETRO TAMANHO 1 VEZ, SENDO QUE ESTE PARÂMETRO CORRESPONDE A 2 PARÂMETROS NO BLOCO DE CÓDIGO PINCEL.FILLRECT() E PINCEL.STROKERECT() SENDO ALTURA E LARGURA.
+  function desenhaQuadrado(x, y, tamanho, cor) {
+    pincel.fillStyle = cor
+    pincel.fillRect(x, y, tamanho, tamanho)
+    pincel.fillStroke = 'black'
+    pincel.strokeRect(x, y, tamanho, tamanho)
+  }
+  desenhaQuadrado(50, 50, 50, 'green')
+  desenhaQuadrado(100, 50, 50, 'green')
+  desenhaQuadrado(150, 50, 50, 'green')
+  desenhaQuadrado(200, 50, 50, 'white')
+
+  // AQUI TEMOS A FUNÇÃO PARA ESCREVER
+  function desenhaTexto(texto, x, y) {
+    pincel.font = '20px Georgia'
+    pincel.fillStyle = 'black'
+    pincel.fillText(texto, x, y)
+  }
+
+  desenhaTexto('Qual é a fração?', 50, 30)
+</script>

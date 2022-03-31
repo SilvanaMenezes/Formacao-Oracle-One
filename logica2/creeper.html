@@ -1,0 +1,32 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+  var tela = document.querySelector('canvas')
+  var pincel = tela.getContext('2d')
+
+  //Area do desenho
+  pincel.fillStyle = '#CDC673'
+  pincel.fillRect(0, 0, 600, 400)
+
+  //Cabeça
+  pincel.fillStyle = 'darkgreen'
+  pincel.fillRect(100, 50, 350, 300)
+
+  //Olhos
+  pincel.fillStyle = 'black'
+  pincel.fillRect(150, 90, 90, 90)
+
+  pincel.fillStyle = 'black'
+  pincel.fillRect(300, 90, 90, 90)
+
+  //Nariz
+  pincel.fillStyle = 'black'
+  pincel.fillRect(235, 150, 70, 100)
+
+  //Boca ou Bigode
+  pincel.fillStyle = 'black'
+  pincel.fillRect(190, 240, 60, 110)
+
+  pincel.fillStyle = 'black'
+  pincel.fillRect(300, 240, 60, 110)
+</script>
