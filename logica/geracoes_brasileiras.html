@@ -1,0 +1,31 @@
+<meta charset="UTF-8" />
+
+<script>
+  function mostra(frase) {
+    document.write(frase)
+    pulaLinha()
+  }
+
+  function pulaLinha() {
+    document.write('<br>')
+  }
+
+  var anoInicial = 1500
+  var anoAtual = 2022
+  var mediaIdade = 28
+
+  mostra(anoInicial + ' foi o ano do descombrimento do Brasil.')
+  pulaLinha()
+
+  mostra('Estamos no ano ' + anoAtual + ' atualmente.')
+  pulaLinha()
+
+  mostra('A média de idade que um casal tem filhos no Brasil é ' + mediaIdade)
+  pulaLinha()
+
+  mostra(
+    'Desde seu descobrimento o Brasil tem ' +
+      Math.round(anoAtual - anoInicial) / mediaIdade +
+      ' gerações.'
+  )
+</script>
