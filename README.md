@@ -8,7 +8,7 @@
 - [x]  Lógica de programação II: pratique com desenhos, animações e um jogo;
 - [x]  HTML5 e CSS3 parte 1: a primeira página da Web;
 - [x]  HTML5 e CSS3 parte 2: posicionamento, listas e navegação;
-- [ ]  JavaScript: programando na linguagem da web;
+- [x]  JavaScript: programando na linguagem da web;
 
 ### Front-end 🔛
 
