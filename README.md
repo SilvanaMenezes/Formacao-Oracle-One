@@ -12,8 +12,8 @@
 
 ### Front-end 🔛
 
-- [ ]  HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas;
-- [ ]  HTML5 e CSS3 parte 4: avançando no CSS;
+- [x]  HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas;
+- [x]  HTML5 e CSS3 parte 4: avançando no CSS;
 - [ ]  jQuery: domine a biblioteca mais popular do mercado parte 1;
 - [ ]  jQuery: avance na biblioteca mais popular do mercado parte 2;
 - [ ]  Layouts Responsivos: trabalhando com layouts mobile;
