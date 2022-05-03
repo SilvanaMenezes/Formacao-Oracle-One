@@ -2,25 +2,22 @@
   font-size: 20px;
   height: 130px;
   border: 3px solid black;
+  outline: none;
 }
-
 .frase{
   font-size: 20px;
   text-align: left;
 }
-
 .campo-desativado{
   background-color: lightgray;
 }
-
 .icones{
   vertical-align: middle;
 }
-
-.borda-correto {
+.borda-verde{
   border: 3px solid green;
 }
 
-.borda-errado {
+.borda-vermelha{
   border: 3px solid red;
 }
