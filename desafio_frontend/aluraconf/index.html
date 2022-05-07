@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Aluraconf</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/speakers.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="main-menu">
+            <ul>
+                <li class="menu-item"><a href="#panel-about">Sobre</a></li>
+                <li class="menu-item"><a href="#panel-speakers">Palestrantes</a></li>
+            </ul>
+        </nav>
+        <div class="jumbotron">
+            <section class="panel-main">
+                <h1 class="title">ALURACONF</h1>
+                <h2 class="subtitle">30MAIO|RIO</h2>
+            </section>
+            <section class="panel-subscribe">
+                <a href="#panel-form" class="button">Inscreva-se</a>
+            </section>
+        </div>
+    </header>
+
+    <section id="panel-about" class="panel panel-about">
+        <div class="container">
+            <h2 class="title">Muito conteúdo: do frontend ao backend</h2>
+            <h3 class="subtitle">30 de Maio de 2022 - na Cidade Maravilhosa</h3>
+
+            <div class="about-description">
+                <p>Com a AluraConf abordaremos o que há de novidade e conhecimentos essenciais a um desenvolver mobile.</p>
+                <p>É uma grande chance de ficar por dentro dos assuntos de Android, iOS, Web mobile, desenvolvimento híbrido, UX, além da parte backend com Rest, Microservices, e BigData. O desenvolvedor atualizado vai estar aqui.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="panel-speakers" class="panel panel-speakers" >
+        <div class="container">
+            <div class="about-speakers">
+                <h2 class="title">PALESTRANTES</h2>
+                <h3 class="subtitle">Aprenda com palestrantes que são referência no mercado</h3>
+            </div>
+            <ul class="speakers">
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/perfil_mulher.jpg" alt="Mulher Vestindo Blusa De Meia Manga Com Gola Rosa" title="fonte: site Pexels - Moose Photos">
+                        <figcaption class="speaker-name">Amanda Coimbra</figcaption>
+                        <p class="speaker-bio">Desenvolvedora e Instrutora da Caelum</p>
+                    </figure>
+                    <p class="speaker-speach">Vai falar sobre a trilha front-end</p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/perfil_homem2.jpg" alt="Homem Vestindo Uma Camisa Verde" title="fonte: site Pexels - Justin Shaifer">
+                        <figcaption class="speaker-name">Flávio Almeida</figcaption>
+                        <p class="speaker-bio">Desenvolvedor e Instrutor da Caelum</p>
+                    </figure>
+                    <p class="speaker-speach">Vai falar sobre tecnologia na cidade do Rio de Janeiro: Como a cidade tem se preparado para levar acessibildade para todos as comunidades, promovendo mais inclusão e educação para crianças e adolecentes se prepararem para as carreiras do futuro.</p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/perfil_mulher2.jpg" alt="Mulher Usando Blusa Preta Com Alça Espaguete" title="fonte: site Pexels - Pixaby">
+                        <figcaption class="speaker-name">Beatriz Sales</figcaption>
+                        <p class="speaker-bio">Desenvolvedora e Instrutora da Caelum</p>
+                    </figure>
+                    <p class="speaker-speach">Vai falar sobre a trilha back-end e sua interação com banco de dados.</p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/perfil_homem.jpg" alt="Homem Vestindo Uma Camisa Social Marrom Segurando Um Chapéu Fedora Branco" title="fonte: site Pexels - Moose Photos">
+                        <figcaption class="speaker-name">Felipe Silva</figcaption>
+                        <p class="speaker-bio">Cantor e Compositor</p>
+                    </figure>
+                    <p class="speaker-speach">Vai falar sobre o uso da tecnologia das grandes produtoras de música do Rio de Janeiro.</p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/perfil_mulher.jpg" alt="Mulher Vestindo Blusa De Meia Manga Com Gola Rosa" title="fonte: site Pexels - Moose Photos">
+                        <figcaption class="speaker-name">Camila Santiago</figcaption>
+                        <p class="speaker-bio">Desenvolvedora e Instrutora da Caelum</p>
+                    </figure>
+                    <p class="speaker-speach">Vai falar sobre a trilha fullstack</p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/perfil_homem2.jpg" alt="Homem Vestindo Uma Camisa Verde" title="fonte: site Pexels - Justin Shaifer">
+                        <figcaption class="speaker-name">Wesley Rodrigues</figcaption>
+                        <p class="speaker-bio">Desenvolvedor e Instrutor da Caelum</p>
+                    </figure>
+                    <p class="speaker-speach">Vai fazer o encerramento do evento, trazendo uma roda de coversa sobre o caminho da tecnologia e o que devemos esperar para o futuro.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="panel-form" class="panel-form">
+        <div class="container">
+            <h2 class="title">Seus Dados</h2>
+            <form>
+                <div class="field">
+                    <label>Nome</label>
+                    <input class="field-input">
+                </div>
+                <div class="field">
+                    <label>E-mail</label>
+                    <input class="field-input"> 
+                </div>
+                <div class="button-place">
+                    <button class="button">REALIZAR INSCRIÇÃO</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">         
+        <nav class="main-menu">
+            <ul>
+                <p>Silvana Menezes &copy; 2022</p>                
+                <li class="menu-item">
+                    <a href="https://www.linkedin.com/in/silvana-sales-de-menezes/" target="_blank">
+                    <img src="">Linkedin</a>
+                </li>
+                <li class="menu-item">
+                    <a href="https://github.com/SilvanaMenezes" target="_blank">
+                    <img src="">GitHub</a>
+                </li>        
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
