@@ -23,9 +23,9 @@
 - [x]  Java JRE e JDK: escreva o seu primeiro código com Eclipse;
 - [x]  Java OO: introdução à Orientação a Objetos;
 - [x]  Java Polimorfismo: entenda herança e interfaces;
-- [ ]  Java Exceções: aprenda a criar, lançar e controlar exceções;
-- [ ]  Java e java.lang: programe com a classe Object e String;
-- [ ]  Java e java.util: Coleções, Wrappers e Lambda expressions;
-- [ ]  Java e [java.io](http://java.io/): Streams, Reader e Writers;
-- [ ]  Java Collections: Dominando Listas, Sets e Mapas;
-- [ ]  Java moderno: tire proveito dos novos recursos do Java 8;
+- [x]  Java Exceções: aprenda a criar, lançar e controlar exceções;
+- [x]  Java e java.lang: programe com a classe Object e String;
+- [x]  Java e java.util: Coleções, Wrappers e Lambda expressions;
+- [x]  Java e [java.io](http://java.io/): Streams, Reader e Writers;
+- [x]  Java Collections: Dominando Listas, Sets e Mapas;
+- [x]  Java moderno: tire proveito dos novos recursos do Java 8;
